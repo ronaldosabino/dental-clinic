@@ -1,0 +1,120 @@
+:host {
+  --footer-background: #173e39;
+  --footer-background-bottom: #12332f;
+  --footer-text: #f4f7f5;
+  --footer-muted: #bdcec7;
+  --footer-accent: #dce9e1;
+
+  display: block;
+}
+
+.site-footer {
+  color: var(--footer-text);
+  background-color: var(--footer-background);
+}
+
+.footer-brand {
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.brand-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  color: var(--footer-background);
+  background-color: var(--footer-accent);
+  border-radius: 50%;
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+}
+
+.footer-brand-name {
+  font-size: 1rem;
+}
+
+.footer-muted {
+  color: var(--footer-muted);
+}
+
+.footer-description {
+  max-width: 340px;
+  color: var(--footer-muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.footer-heading {
+  color: var(--footer-text);
+}
+
+.footer-link {
+  color: var(--footer-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible,
+.footer-contact:hover,
+.footer-social-link:hover {
+  color: #fff;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--footer-text);
+  font-size: 0.875rem;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: color 0.2s ease;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  color: var(--footer-accent);
+  border: 1px solid rgba(220, 233, 225, 0.25);
+  border-radius: 8px;
+}
+
+.footer-cta {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-cta-description {
+  color: var(--footer-muted);
+  line-height: 1.7;
+}
+
+.footer-social-link {
+  color: var(--footer-accent);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: var(--footer-background-bottom);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.break-word {
+  overflow-wrap: anywhere;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-link,
+  .footer-contact {
+    transition: none;
+  }
+}

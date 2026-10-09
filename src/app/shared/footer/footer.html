@@ -1,1 +1,152 @@
-<p>footer works!</p>
+<footer class="site-footer">
+    <div class="container py-5">
+        <div class="row g-4 g-lg-5">
+
+            <!-- Identidade profissional -->
+            <div class="col-12 col-lg-4">
+                <a href="#inicio" class="footer-brand d-inline-flex align-items-center gap-3 mb-3" [attr.aria-label]="'Voltar ao início - ' + nomeProfissional">
+
+                    <span class="brand-symbol" aria-hidden="true">A</span>
+
+                    <span>
+                        <span class="d-block fw-semibold footer-brand-name">
+                            {{ nomeProfissional }}
+                        </span>
+
+                        <span class="d-block small footer-muted">
+                            CIRURGIÃ-DENTISTA
+                        </span>
+                    </span>
+                </a>
+
+                <p class="footer-description mt-2 mb-3">
+                    Cuidado odontológico com atenção, responsabilidade e respeito
+                    à individualidade de cada paciente.
+                </p>
+
+                <p class="small footer-muted mb-0">
+                    {{ cro }}
+                </p>
+            </div>
+
+            <!-- Navegação -->
+            <div class="col-6 col-lg-2">
+                <h2 class="footer-heading h6 fw-semibold mb-3">
+                    Navegação
+                </h2>
+
+                <nav aria-label="Navegação do rodapé">
+                    <ul class="list-unstyled d-grid gap-2 mb-0">
+                        <li>
+                            <a class="footer-link" href="#inicio">Início</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#procedimentos">
+                                Procedimentos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#sobre">Sobre mim</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#depoimentos">
+                                Depoimentos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#duvidas">
+                                Perguntas frequentes
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Contato -->
+            <div class="col-6 col-lg-3">
+                <h2 class="footer-heading h6 fw-semibold mb-3">
+                    Entre em contato
+                </h2>
+
+                <ul class="list-unstyled d-grid gap-3 mb-0">
+                    <li>
+                        <a class="footer-contact d-flex align-items-center gap-2" [href]="linkWhatsapp" target="_blank" rel="noopener noreferrer">
+
+                            <i class="bi bi-whatsapp"></i>
+
+                            <span>
+                                <span class="d-block small footer-muted">
+                                    WhatsApp
+                                </span>
+                                <span>{{ telefoneExibicao }}</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="footer-contact d-flex align-items-center gap-2" [href]="'mailto:' + email">
+                            <i class="bi bi-envelope"></i>
+
+                            <span>
+                                <span class="d-block small footer-muted">E-mail</span>
+                                <span class="break-word">{{ email }}</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="footer-contact d-flex align-items-center gap-2" href="#localizacao">
+                            <i class="bi bi-geo-alt"></i>
+
+                            <span>
+                                <span class="d-block small footer-muted">
+                                    Endereço
+                                </span>
+                                <span>{{ cidade }}</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Chamada para ação -->
+            <div class="col-12 col-lg-3">
+                <div class="footer-cta rounded-3 p-4">
+                    <h2 class="h5 fw-semibold mb-2">
+                        Vamos cuidar do seu sorriso?
+                    </h2>
+
+                    <p class="small footer-cta-description mb-3">
+                        Entre em contato para consultar os horários disponíveis.
+                    </p>
+
+                    <a class="btn btn-light w-100 fw-semibold" [href]="linkWhatsapp" target="_blank" rel="noopener noreferrer">
+                        Agende sua consulta <i class="bi bi-arrow-up-right ms-2"></i>
+                    </a>
+
+                    <a class="footer-social-link d-inline-flex align-items-center gap-2 mt-3" [href]="instagramUrl" target="_blank" rel="noopener noreferrer" aria-label="Instagram da profissional">
+
+                        <span aria-hidden="true">◎</span>
+                        Acompanhe no Instagram
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Base do footer -->
+    <div class="footer-bottom">
+        <div class="container d-flex flex-column flex-md-row
+             justify-content-between align-items-md-center gap-2 py-3">
+
+            <p class="small footer-muted mb-0">
+                © {{ anoAtual }} {{ nomeProfissional }}. Todos os direitos reservados.
+            </p>
+
+            <a class="footer-link small" href="#inicio">
+                Voltar ao início ↑
+            </a>
+        </div>
+    </div>
+</footer>
