@@ -1,0 +1,265 @@
+:host {
+  --color-primary: #24564f;
+  --color-primary-dark: #173e39;
+  --color-heading: #203a38;
+  --color-soft: #f2f6f3;
+  --color-border: #e1e9e4;
+
+  display: block;
+  color: var(--color-heading);
+}
+
+section[id],
+#sobre,
+#depoimentos,
+#duvidas {
+  scroll-margin-top: 90px;
+}
+
+.text-primary-custom {
+  color: var(--color-primary) !important;
+}
+
+.hero-section {
+  background:
+    radial-gradient(circle at 85% 15%, rgba(220, 233, 225, 0.7), transparent 35%), #fafbf8;
+}
+
+.eyebrow {
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+}
+
+.hero-title {
+  color: var(--color-heading);
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+
+.section-heading {
+  max-width: 680px;
+}
+
+.section-title {
+  color: var(--color-heading);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+}
+
+.btn-primary-custom {
+  color: #fff;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary-custom:hover,
+.btn-primary-custom:focus-visible {
+  color: #fff;
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.btn-outline-primary-custom {
+  color: var(--color-primary);
+  border-color: #9eb6ab;
+}
+
+.btn-outline-primary-custom:hover,
+.btn-outline-primary-custom:focus-visible {
+  color: #fff;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 4.5;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 180px 180px 12px 12px;
+}
+
+.hero-caption {
+  position: absolute;
+  right: -12px;
+  bottom: 24px;
+  max-width: 250px;
+}
+
+.trust-icon,
+.differential-mark {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  color: var(--color-primary);
+  background-color: #e6efe9;
+}
+
+.procedure-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid var(--color-border);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.procedure-card:hover {
+  transform: translateY(-4px);
+  border-color: #b7cdc1;
+  box-shadow: 0 12px 30px rgba(23, 62, 57, 0.08);
+}
+
+.procedure-number {
+  width: 48px;
+  height: 48px;
+  color: var(--color-primary);
+  background-color: #eaf1ec;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.text-link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.text-link:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.differentials-section,
+.testimonials-section {
+  background-color: var(--color-soft);
+}
+
+.differential-card {
+  padding: 8px 0;
+}
+
+.differential-mark {
+  border-radius: 50%;
+}
+
+.about-image {
+  display: block;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+}
+
+.testimonial-card {
+  border: 1px solid var(--color-border);
+}
+
+.testimonial-quote {
+  color: var(--color-primary);
+  font-family: Georgia, serif;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.faq-item summary {
+  position: relative;
+  padding-right: 30px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--color-primary);
+  content: '+';
+  font-size: 1.25rem;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.cta-section {
+  color: #fff;
+  background-color: var(--color-primary-dark);
+}
+
+.cta-section .eyebrow {
+  color: #d3e4da;
+}
+
+.cta-section p {
+  color: #e0ebe5;
+  line-height: 1.8;
+}
+
+@media (min-width: 992px) {
+  .py-lg-6 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-image-wrapper {
+    max-width: 600px;
+  }
+
+  .hero-caption {
+    right: 12px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-title {
+    font-size: clamp(2.3rem, 10vw, 3.2rem);
+  }
+
+  .hero-image {
+    aspect-ratio: 4 / 4.3;
+    border-radius: 120px 120px 10px 10px;
+  }
+
+  .hero-caption {
+    right: 8px;
+    bottom: 12px;
+    max-width: 220px;
+  }
+
+  .hero-section .btn {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .procedure-card {
+    transition: none;
+  }
+
+  .procedure-card:hover {
+    transform: none;
+  }
+}

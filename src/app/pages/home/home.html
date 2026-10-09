@@ -1,1 +1,304 @@
-<p>home works!</p>
+<!-- Hero -->
+<section id="inicio" class="hero-section py-5">
+    <div class="container py-lg-4">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <span class="eyebrow text-uppercase fw-semibold">
+                    Odontologia com cuidado e atenção
+                </span>
+
+                <h1 class="display-4 fw-semibold mt-3 mb-4 hero-title">
+                    Seu sorriso merece
+                    <span class="d-block text-primary-custom">
+                        cuidado especializado.
+                    </span>
+                </h1>
+
+                <p class="lead text-secondary mb-4">
+                    Saúde, confiança e bem-estar começam com o cuidado certo.
+                    Conheça uma abordagem odontológica que respeita suas
+                    necessidades e valoriza o seu sorriso.
+                </p>
+
+                <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
+                    <a class="btn btn-primary-custom btn-lg" [href]="linkWhatsapp" target="_blank" rel="noopener noreferrer">
+                        Agende sua consulta <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="btn btn-outline-primary-custom btn-lg" href="#procedimentos">
+                        Conheça os procedimentos
+                    </a>
+                </div>
+
+                <div class="d-flex align-items-center gap-2 mt-4 small text-secondary">
+                    <span aria-hidden="true">✓</span>
+                    Atendimento individualizado e acolhedor
+                </div>
+            </div>
+
+            <div class="col-lg-6 order-1 order-lg-2">
+                <div class="hero-image-wrapper mx-auto">
+                    <img src="assets/image.png" alt="Dra. [Nome da Dentista], cirurgiã-dentista" class="hero-image" fetchpriority="high">
+
+                    <div class="hero-caption bg-white rounded-3 shadow-sm p-3">
+                        <p class="fw-semibold mb-1 text-dark">
+                            Seu sorriso em boas mãos
+                        </p>
+
+                        <p class="small text-secondary mb-0">
+                            Cuidado profissional pensado para você.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Procedimentos -->
+<section id="procedimentos" class="py-5 py-lg-6">
+    <div class="container py-lg-4">
+        <div class="section-heading mb-4 mb-lg-5">
+            <span class="eyebrow text-uppercase fw-semibold">
+                Tratamentos odontológicos
+            </span>
+
+            <h2 class="section-title fw-semibold mt-2 mb-3">
+                Soluções para cuidar do seu sorriso
+            </h2>
+
+            <p class="text-secondary mb-0">
+                Conheça os procedimentos e descubra as possibilidades de
+                tratamento para as suas necessidades.
+            </p>
+        </div>
+
+        <div class="row g-3 g-lg-4">
+            @for (procedimento of procedimentos; track procedimento.numero) {
+            <div class="col-sm-6 col-lg-4">
+                <article class="procedure-card h-100 p-4 rounded-3">
+                    <span class="procedure-number d-inline-flex align-items-center
+                           justify-content-center rounded-circle mb-3">
+                        {{ procedimento.numero }}
+                    </span>
+
+                    <h3 class="h5 fw-semibold mb-2">
+                        {{ procedimento.nome }}
+                    </h3>
+
+                    <p class="text-secondary small lh-lg mb-4">
+                        {{ procedimento.descricao }}
+                    </p>
+
+                    <a class="text-link fw-semibold mt-auto" [href]="linkWhatsapp" target="_blank" rel="noopener noreferrer">
+                        Saiba mais <span aria-hidden="true">↗</span>
+                    </a>
+                </article>
+            </div>
+            }
+        </div>
+
+        <div class="text-center mt-4 mt-lg-5">
+            <a class="btn btn-primary-custom btn-lg" [href]="linkWhatsapp" target="_blank" rel="noopener noreferrer">
+                Encontre o cuidado ideal para você
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Diferenciais -->
+<section class="differentials-section py-5 py-lg-6">
+    <div class="container py-lg-4">
+        <div class="row g-5 align-items-start">
+            <div class="col-lg-5">
+                <span class="eyebrow text-uppercase fw-semibold">
+                    Por que escolher meu atendimento?
+                </span>
+
+                <h2 class="section-title fw-semibold mt-3 mb-3">
+                    Mais atenção às suas necessidades.
+                </h2>
+
+                <p class="text-secondary lh-lg mb-4">
+                    Cada paciente tem uma história. Meu compromisso é oferecer
+                    um atendimento atencioso, com orientações claras e respeito
+                    à individualidade de cada pessoa.
+                </p>
+
+                <a class="btn btn-primary-custom" href="#sobre">
+                    Conheça minha atuação
+                </a>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="row g-4">
+                    @for (diferencial of diferenciais; track diferencial.titulo) {
+                    <div class="col-sm-6">
+                        <article class="differential-card h-100">
+                            <span class="differential-mark d-inline-flex
+                               align-items-center justify-content-center
+                               rounded-circle mb-3" aria-hidden="true">
+                                ✓
+                            </span>
+
+                            <h3 class="h5 fw-semibold mb-2">
+                                {{ diferencial.titulo }}
+                            </h3>
+
+                            <p class="small text-secondary lh-lg mb-0">
+                                {{ diferencial.descricao }}
+                            </p>
+                        </article>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sobre a dentista -->
+<section id="sobre" class="py-5 py-lg-6">
+    <div class="container py-lg-4">
+        <div class="row align-items-center g-4 g-lg-5">
+            <div class="col-lg-6">
+                <img src="assets/consultorio.png" alt="Ambiente de atendimento odontológico" class="about-image w-100 rounded-3" loading="lazy">
+            </div>
+
+            <div class="col-lg-6">
+                <span class="eyebrow text-uppercase fw-semibold">
+                    Sobre a profissional
+                </span>
+
+                <h2 class="section-title fw-semibold mt-3 mb-3">
+                    Conhecimento e dedicação em cada atendimento.
+                </h2>
+
+                <p class="text-secondary lh-lg">
+                    Sou a {{ nomeProfissional }}, cirurgiã-dentista, e acredito
+                    que um bom atendimento começa com escuta, acolhimento e
+                    respeito às necessidades de cada paciente.
+                </p>
+
+                <p class="text-secondary lh-lg">
+                    Meu objetivo é orientar você sobre sua saúde bucal e
+                    apresentar as opções de tratamento adequadas após uma
+                    avaliação individualizada.
+                </p>
+
+                <a class="btn btn-primary-custom mt-2" [href]="linkWhatsapp" target="_blank" rel="noopener noreferrer">
+                    Vamos conversar <i class="bi bi-arrow-up-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Depoimentos -->
+<section id="depoimentos" class="testimonials-section py-5 py-lg-6">
+    <div class="container py-lg-4">
+        <div class="section-heading text-center mx-auto mb-4 mb-lg-5">
+            <span class="eyebrow text-uppercase fw-semibold">
+                Depoimentos
+            </span>
+
+            <h2 class="section-title fw-semibold mt-2 mb-3">
+                Confiança construída em cada atendimento.
+            </h2>
+
+            <p class="text-secondary mb-0">
+                Conheça as experiências de quem já passou por atendimento.
+            </p>
+        </div>
+
+        <div class="row g-3 g-lg-4">
+            @for (depoimento of depoimentos; track $index) {
+            <div class="col-md-6 col-lg-4">
+                <article class="testimonial-card h-100 bg-white rounded-3 p-4">
+                    <span class="testimonial-quote d-block" aria-hidden="true">
+                        “
+                    </span>
+
+                    <p class="text-secondary lh-lg">
+                        {{ depoimento.texto }}
+                    </p>
+
+                    <p class="fw-semibold text-dark mb-0">
+                        {{ depoimento.nome }}
+                    </p>
+                </article>
+            </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="duvidas" class="py-5 py-lg-6">
+    <div class="container py-lg-4">
+        <div class="row g-4 g-lg-5">
+            <div class="col-lg-5">
+                <span class="eyebrow text-uppercase fw-semibold">
+                    Perguntas frequentes
+                </span>
+
+                <h2 class="section-title fw-semibold mt-3 mb-3">
+                    Tire suas dúvidas antes de agendar.
+                </h2>
+
+                <p class="text-secondary lh-lg">
+                    Encontre respostas para algumas das perguntas mais comuns.
+                    Se precisar de mais informações, estou à disposição.
+                </p>
+
+                <a class="btn btn-primary-custom mt-2" [href]="linkWhatsapp" target="_blank" rel="noopener noreferrer">
+                    Fale pelo WhatsApp <i class="bi bi-whatsapp ms-2"></i>
+                </a>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="faq-list">
+                    @for (item of perguntas; track item.pergunta) {
+                    <details class="faq-item py-3">
+                        <summary class="fw-semibold">
+                            {{ item.pergunta }}
+                        </summary>
+
+                        <p class="text-secondary lh-lg mt-3 mb-0">
+                            {{ item.resposta }}
+                        </p>
+                    </details>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA final -->
+<!-- <section class="cta-section py-5">
+    <div class="container py-lg-3">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+                <span class="eyebrow text-uppercase fw-semibold">
+                    Seu sorriso merece atenção
+                </span>
+
+                <h2 class="h2 fw-semibold mt-2 mb-3">
+                    Que tal dar o primeiro passo?
+                </h2>
+
+                <p class="mb-0">
+                    Entre em contato para esclarecer suas dúvidas e consultar
+                    os horários disponíveis.
+                </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+                <a class="btn btn-light btn-lg fw-semibold" [href]="linkWhatsapp" target="_blank" rel="noopener noreferrer">
+                    Agende sua consulta ↗
+                </a>
+            </div>
+        </div>
+    </div>
+</section> -->
