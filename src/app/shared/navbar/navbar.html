@@ -1,10 +1,8 @@
-<header class="site-header sticky-top">
+<header class="site-header shadow-sm">
     <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
-
         <div class="container">
-            <!-- Marca -->
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio" (click)="fecharMenu()" aria-label="Ir para o início">
 
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio" (click)="fecharMenu()" aria-label="Ir para o início">
                 <span class="brand-symbol" aria-hidden="true">A</span>
 
                 <span class="brand-text">
@@ -18,9 +16,7 @@
                 </span>
             </a>
 
-            <!-- Botão mobile -->
-            <button class="navbar-toggler" type="button" (click)="alternarMenu()" [attr.aria-expanded]="menuAberto" aria-controls="navbarMenu" [attr.aria-label]="menuAberto ? 'Fechar menu' : 'Abrir menu'">
-
+            <button class="navbar-toggler d-lg-none" type="button" (click)="alternarMenu()" [attr.aria-expanded]="menuAberto" aria-controls="navbarMenu" [attr.aria-label]="menuAberto ? 'Fechar menu' : 'Abrir menu'">
                 <span class="menu-icon" [class.menu-icon-open]="menuAberto" aria-hidden="true">
                     <span></span>
                     <span></span>
@@ -28,11 +24,8 @@
                 </span>
             </button>
 
-            <!-- Menu -->
             <div id="navbarMenu" class="collapse navbar-collapse" [class.show]="menuAberto">
-
                 <ul class="navbar-nav align-items-lg-center mx-lg-auto gap-lg-1">
-
                     @for (link of links; track link.destino) {
                     <li class="nav-item">
                         <a class="nav-link" [href]="link.destino" (click)="fecharMenu()">
@@ -41,16 +34,8 @@
                     </li>
                     }
                 </ul>
-
-                <!-- CTA -->
-                <div class="navbar-actions">
-                    <a class="btn btn-appointment" [href]="linkWhatsapp" target="_blank" rel="noopener noreferrer" (click)="fecharMenu()">
-
-                        Agende sua consulta
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </div>
             </div>
+
         </div>
     </nav>
 </header>

@@ -1,17 +1,19 @@
 import { Component, HostListener } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-navbar',
-  styleUrl: './navbar.css',
+  standalone: true,
+  imports: [],
   templateUrl: './navbar.html',
+  styleUrl: './navbar.css',
 })
 export class Navbar {
   menuAberto = false;
 
   readonly nomeProfissional = 'Dra. Alanda Rayssa';
 
-  readonly whatsapp = '+55 81 8743-6309';
+  // Informe o número real somente com dígitos.
+  readonly whatsapp = '5581XXXXXXXXX';
 
   readonly links = [
     { texto: 'Início', destino: '#inicio' },
