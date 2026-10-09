@@ -28,10 +28,10 @@ interface Pergunta {
   templateUrl: './home.html',
 })
 export class Home {
-  readonly nomeProfissional = 'Dra. [Nome da Dentista]';
+  readonly nomeProfissional = 'Dra. Alanda Rayssa';
 
   // Substitua pelo WhatsApp profissional com código do país e DDD.
-  readonly whatsapp = '5500000000000';
+  readonly whatsapp = '5581987436309';
 
   get linkWhatsapp(): string {
     const mensagem = encodeURIComponent(
@@ -97,16 +97,17 @@ export class Home {
     {
       nome: 'Paciente',
       texto:
-        'Este espaço deve apresentar um depoimento real de paciente, publicado com sua autorização.',
-    },
-    {
-      nome: 'Paciente',
-      texto: 'Compartilhe aqui uma avaliação autêntica sobre a experiência de atendimento.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.',
     },
     {
       nome: 'Paciente',
       texto:
-        'Utilize relatos verdadeiros que ajudem os visitantes a conhecer a experiência oferecida.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.',
+    },
+    {
+      nome: 'Paciente',
+      texto:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.',
     },
   ];
 

@@ -13,7 +13,7 @@ export class Navbar {
   readonly nomeProfissional = 'Dra. Alanda Rayssa';
 
   // Informe o número real somente com dígitos.
-  readonly whatsapp = '5581XXXXXXXXX';
+  readonly whatsapp = '5581987436309';
 
   readonly links = [
     { texto: 'Início', destino: '#inicio' },
