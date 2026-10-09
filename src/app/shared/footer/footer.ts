@@ -11,7 +11,7 @@ export class Footer {
 
   readonly nomeProfissional = 'Dra. Alanda Rayssa';
 
-  readonly cro = 'CRO-PE [número]';
+  readonly cro = 'CRO-PE 22440';
 
   readonly whatsapp = '5581987436309';
 
