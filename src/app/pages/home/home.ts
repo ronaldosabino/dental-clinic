@@ -44,33 +44,34 @@ export class Home {
   readonly procedimentos: Procedimento[] = [
     {
       numero: '01',
-      nome: 'Implantes dentários',
-      descricao: 'Alternativas para reabilitação oral, conforme avaliação individual.',
+      nome: 'Facetas em resina',
+      descricao:
+        'Melhoria estética dos dentes com aplicação de resina composta para correção de pequenas imperfeições.',
     },
     {
       numero: '02',
-      nome: 'Ortodontia',
-      descricao: 'Tratamentos para alinhamento dentário e correção da mordida.',
-    },
-    {
-      numero: '03',
       nome: 'Clareamento dental',
       descricao: 'Cuidados para melhorar a tonalidade dos dentes com orientação profissional.',
     },
     {
-      numero: '04',
+      numero: '03',
       nome: 'Limpeza dental',
       descricao: 'Prevenção e cuidados importantes para a saúde bucal.',
     },
     {
-      numero: '05',
+      numero: '04',
       nome: 'Restaurações',
       descricao: 'Recuperação da estrutura e da função dos dentes comprometidos.',
     },
     {
-      numero: '06',
+      numero: '05',
       nome: 'Próteses dentárias',
       descricao: 'Soluções para reabilitação oral e recuperação da função mastigatória.',
+    },
+    {
+      numero: '06',
+      nome: 'Atendimento de urgência',
+      descricao: 'Atendimento imediato para situações de dor, trauma ou desconforto bucal.',
     },
   ];
 
