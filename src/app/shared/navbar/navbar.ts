@@ -10,7 +10,7 @@ import { Component, HostListener } from '@angular/core';
 export class Navbar {
   menuAberto = false;
 
-  readonly nomeProfissional = 'Dra. Alanda Rayssa';
+  readonly nomeProfissional = 'Dra. Alanda Bezerra';
 
   // Informe o número real somente com dígitos.
   readonly whatsapp = '5581987436309';

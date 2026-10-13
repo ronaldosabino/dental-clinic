@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class Footer {
   readonly anoAtual = new Date().getFullYear();
 
-  readonly nomeProfissional = 'Dra. Alanda Rayssa';
+  readonly nomeProfissional = 'Dra. Alanda Bezerra';
 
   readonly cro = 'CRO-PE 22440';
 

@@ -28,7 +28,7 @@ interface Pergunta {
   templateUrl: './home.html',
 })
 export class Home {
-  readonly nomeProfissional = 'Dra. Alanda Rayssa';
+  readonly nomeProfissional = 'Dra. Alanda Bezerra';
 
   // Substitua pelo WhatsApp profissional com código do país e DDD.
   readonly whatsapp = '5581987436309';
