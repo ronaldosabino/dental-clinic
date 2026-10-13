@@ -96,19 +96,19 @@ export class Home {
 
   readonly depoimentos: Depoimento[] = [
     {
-      nome: 'Paciente',
+      nome: 'Milena Soares',
       texto:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.',
+        'Fui muito bem recebida desde o primeiro atendimento. A Dra. Alanda foi atenciosa, explicou cada etapa do procedimento e me deixou muito mais tranquila.',
     },
     {
-      nome: 'Paciente',
+      nome: 'Lucas Oliveira',
       texto:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.',
+        'Gostei da experiência! O atendimento foi cuidadoso, o ambiente é muito agradável e todas as minhas dúvidas foram esclarecidas com muita paciência.',
     },
     {
-      nome: 'Paciente',
+      nome: 'Ellen da Silva',
       texto:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.',
+        'Recomendo para todos que buscam um atendimento de qualidade! Me senti acolhida durante a consulta e tive confiança para seguir com o tratamento.',
     },
   ];
 
