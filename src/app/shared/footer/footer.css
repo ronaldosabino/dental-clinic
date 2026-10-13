@@ -11,6 +11,7 @@
 .site-footer {
   color: var(--footer-text);
   background-color: var(--footer-background);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .footer-brand {
@@ -106,6 +107,7 @@
 .footer-bottom {
   background-color: var(--footer-background-bottom);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.85rem;
 }
 
 .break-word {
