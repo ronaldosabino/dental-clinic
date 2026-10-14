@@ -46,7 +46,7 @@ export class Home {
       numero: '01',
       nome: 'Facetas em resina',
       descricao:
-        'Melhoria estética dos dentes com aplicação de resina composta para correção de pequenas imperfeições.',
+        'Melhoria estética dos dentes com aplicação de resina para correção de imperfeições.',
     },
     {
       numero: '02',
@@ -70,7 +70,7 @@ export class Home {
     },
     {
       numero: '06',
-      nome: 'Atendimento de urgência',
+      nome: 'Urgências',
       descricao: 'Atendimento imediato para situações de dor, trauma ou desconforto bucal.',
     },
   ];
