@@ -17,7 +17,7 @@ export class Footer {
 
   readonly telefoneExibicao = '(81) 9 8743-6309';
 
-  readonly email = 'contato@exemplo.com.br';
+  readonly email = 'alandsraybs@gmail.com';
 
   readonly endereco = '[Endereço do consultório]';
 
